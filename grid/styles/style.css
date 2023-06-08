@@ -1,0 +1,54 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 10px; */
+    background: gray;
+    box-sizing: border-box;
+}
+.block {
+    background: orange;
+    /* padding: 10px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*колонки*/
+    grid-template-rows: repeat(4, 50px); /*строки*/
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 50px; */
+    grid-gap: 10px 50px; /*row column*/
+}
+.element {
+    background: yellow;
+}
+.second-container .block {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: gray;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'nav section section'
+    'nav article article'
+    'footer footer footer'
+    ;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+section {
+    grid-area: section;
+}
+article {
+    grid-area: article;
+}
+footer {
+    grid-area: footer;
+}

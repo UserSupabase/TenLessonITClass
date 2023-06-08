@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . . . . . . . . . . . . . . ."
+        ". . . . . . . . . . . . . . . . . . . ."
+        ". . . head head head head head head head head . . . . . . . . ."
+        ". . block1 block2 block2 block2 block2 block2 block2 block2 block2 block3 . . . . . . . ."
+        ". block21 block5 block5 block5 block5 block5 block5 block5 block5 block5 block5 block8 . . . . . . ."
+        ". block21 block5 block5 block5 block5 block5 block5 block5 block5 block5 block5 block8 . . . . . . ."
+        ". block21 block6 block6 block6 block6 block6 block6 eye block10 eye2 block7 block8 block9 block9 block9 block9 block9 block9 ."
+        ". block21 block11 block11 block11 block11 block11 block11 block11 block11 block11 block11 block11 block11 block11 block11 block12 block15 block14 ."
+        ". block21 block18 block18 block18 block18 block18 block18 block18 block18 block18 block18 block17 block16 block16 block16 block12 block13 block13 ."
+        ". block21 block18 block18 block18 block18 block18 block18 block18 block18 block18 block18 block20 . . . . . . ."
+        ". block21 block18 block18 block18 block18 block18 block18 block18 block18 block18 block18 block20 . . . . . . ."
+        ". block21 block19 block19 block19 block19 block19 block19 block19 block19 block19 block19 block20 . . . . . . ."
+        ". block21 block23 block23 block23 block23 block23 block23 block23 block23 block23 block23 block20 . . . . . . ."
+        ". block21 block23 block23 block23 block23 block23 block23 block23 block23 block23 block23 block20 . . . . . . ."
+        ". block21 block22 block22 block22 block22 block22 block22 block22 block22 block22 block22 block20 . . . . . . ."
+        ". . block24 . . block26 . . block28 . . block30 . . . . . . . ."
+        ". . block24 . . block26 . . block28 . . block30 . . . . . . . ."
+        ". . block24 block25 . block26 block27 . block28 block29 . block30 block31 . . . . . . ."
+        ". . . . . . . . . . . . . . . . . . . .";
+}
+.head {
+    grid-area: head;
+}
+.block1 {
+    grid-area: block1;
+}
+.block2 {
+    grid-area: block2;
+}
+.block3 {
+    grid-area: block3;
+}
+.block5 {
+    grid-area: block5;
+}
+.block6 {
+    grid-area: block6;
+}
+.eye {
+    grid-area: eye;
+}
+.eye2 {
+    grid-area: eye2;
+}
+.block7 {
+    grid-area: block7;
+}
+.block8 {
+    grid-area: block8;
+}
+.block9 {
+    grid-area: block9;
+}
+.block10 {
+    grid-area: block10;
+}
+.block11 {
+    grid-area: block11;
+}
+.block12 {
+    grid-area: block12;
+}
+.block13 {
+    grid-area: block13;
+}
+.block14 {
+    grid-area: block14;
+}
+.block15 {
+    grid-area: block15;
+}
+.block16 {
+    grid-area: block16;
+}
+.block17 {
+    grid-area: block17;
+}
+.block18 {
+    grid-area: block18;
+}
+.block19 {
+    grid-area: block19;
+}
+.block20 {
+    grid-area: block20;
+}
+.block21 {
+    grid-area: block21;
+}
+.block22 {
+    grid-area: block22;
+}
+.block23 {
+    grid-area: block23;
+}
+.block24 {
+    grid-area: block24;
+}
+.block25 {
+    grid-area: block25;
+}
+.block26 {
+    grid-area: block26;
+}
+.block27 {
+    grid-area: block27;
+}
+.block28 {
+    grid-area: block28;
+}
+.block29 {
+    grid-area: block29;
+}
+.block30 {
+    grid-area: block30;
+}
+.block31 {
+    grid-area: block31;
+}
+.black {
+    background: #000;
+}
+.orange {
+    background: orange;
+}
